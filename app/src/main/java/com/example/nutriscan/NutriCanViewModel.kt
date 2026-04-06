@@ -1,4 +1,4 @@
-package com.example.nutriscan
+package com.nutriscan.app
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

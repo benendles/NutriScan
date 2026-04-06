@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/cream">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp" android:paddingBottom="0dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="AI Insights" android:textColor="@color/text_primary" android:textSize="26sp" android:fontFamily="@font/syne_bold"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="POWERED BY NUTRISCAN INTELLIGENCE" android:textColor="@color/text_muted"
+                android:textSize="11sp" android:fontFamily="@font/dm_mono" android:letterSpacing="0.08" android:layout_marginTop="4dp" android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+        <!-- Score Card -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_charcoal" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginBottom="16dp"
+            android:padding="24dp" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="NUTRITION SCORE" android:textColor="@color/olive_pale" android:textSize="12sp" android:fontFamily="@font/dm_mono" android:letterSpacing="0.1"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="TODAY" android:textColor="@color/olive_mid" android:textSize="11sp"
+                    android:fontFamily="@font/dm_mono" android:background="@drawable/bg_score_badge" android:padding="6dp"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tv_nutrition_score" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="74" android:textColor="@color/white" android:textSize="64sp" android:fontFamily="@font/syne_bold" android:lineSpacingMultiplier="1.0"/>
+            <TextView android:id="@+id/tv_score_desc" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Good — room to improve protein intake" android:textColor="@color/olive_pale" android:textSize="13sp"/>
+            <ProgressBar android:id="@+id/progress_score" style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="16dp"
+                android:progressDrawable="@drawable/progress_food_bar" android:progress="74"/>
+        </LinearLayout>
+
+        <!-- Tip Cards -->
+        <include layout="@layout/item_tip_card" android:id="@+id/tip_protein" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <include layout="@layout/item_tip_card" android:id="@+id/tip_sugar"   android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <include layout="@layout/item_tip_card" android:id="@+id/tip_water"   android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- Weekly Chart -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_cream" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginBottom="24dp" android:padding="20dp" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="CALORIE TREND — THIS WEEK" android:textColor="@color/text_muted"
+                android:textSize="11sp" android:fontFamily="@font/dm_mono" android:letterSpacing="0.1" android:layout_marginBottom="16dp"/>
+            <com.github.mikephil.charting.charts.BarChart android:id="@+id/weekly_chart"
+                android:layout_width="match_parent" android:layout_height="180dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

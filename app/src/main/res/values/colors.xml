@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- NutriScan Palette -->
+    <color name="cream">#F5F0E8</color>
+    <color name="cream_dark">#EAE3D3</color>
+    <color name="olive">#3D4A2E</color>
+    <color name="olive_light">#5C6E42</color>
+    <color name="olive_mid">#8FA672</color>
+    <color name="olive_pale">#C8D4B0</color>
+    <color name="charcoal">#1E1E1A</color>
+    <color name="charcoal_soft">#2E2E28</color>
+    <color name="rust">#C4522A</color>
+    <color name="rust_light">#E07A52</color>
+    <color name="amber">#D4A03A</color>
+    <color name="sand">#B8A882</color>
+    <color name="white_soft">#FDFAF5</color>
+    <color name="text_primary">#1E1E1A</color>
+    <color name="text_secondary">#5A5A50</color>
+    <color name="text_muted">#8A8A7A</color>
+    <color name="border_light">#26200E26</color>
+
+    <!-- System -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

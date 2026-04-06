@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_macro_pill"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_macro_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="84g"
+        android:textColor="@color/white_soft"
+        android:textSize="16sp"
+        android:fontFamily="@font/syne_bold"/>
+
+    <TextView
+        android:id="@+id/tv_macro_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protein"
+        android:textColor="@color/olive_pale"
+        android:textSize="9sp"
+        android:fontFamily="@font/dm_mono"
+        android:letterSpacing="0.08"
+        android:layout_marginTop="2dp"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radius_sm">10dp</dimen>
+    <dimen name="radius_md">14dp</dimen>
+    <dimen name="radius_lg">18dp</dimen>
+    <dimen name="radius_pill">100dp</dimen>
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="section_spacing">24dp</dimen>
+    <dimen name="nav_height">72dp</dimen>
+</resources>
