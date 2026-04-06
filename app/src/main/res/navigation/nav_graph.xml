@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.nutriscan.app.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_scan"
+            app:destination="@id/scanFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_home_to_voice"
+            app:destination="@id/voiceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.nutriscan.app.ui.scan.ScanFragment"
+        android:label="Scan"
+        tools:layout="@layout/fragment_scan" />
+
+    <fragment
+        android:id="@+id/voiceFragment"
+        android:name="com.nutriscan.app.ui.voice.VoiceFragment"
+        android:label="Voice"
+        tools:layout="@layout/fragment_voice" />
+
+    <fragment
+        android:id="@+id/logFragment"
+        android:name="com.nutriscan.app.ui.log.LogFragment"
+        android:label="Log"
+        tools:layout="@layout/fragment_log" />
+
+    <fragment
+        android:id="@+id/progressFragment"
+        android:name="com.nutriscan.app.ui.progress.ProgressFragment"
+        android:label="Progress"
+        tools:layout="@layout/fragment_progress" />
+
+    <fragment
+        android:id="@+id/aiFragment"
+        android:name="com.nutriscan.app.ui.ai.AiFragment"
+        android:label="AI"
+        tools:layout="@layout/fragment_ai" />
+
+</navigation>

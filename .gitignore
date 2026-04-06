@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Gradle files
 .gradle/
 build/
@@ -28,15 +27,7 @@ render.experimental.xml
 *.jks
 *.keystore
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
-=======
-*.iml
-.gradle
-/local.properties
+# Additional excludes
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -44,26 +35,4 @@ google-services.json
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-
-# Kotlin/Java
-**/build/
 **/out/
-
-# Gradle
-.gradle
-build
-
-# Android Studio
-.idea
-*.iml
-
-# Log files
-*.log
-
-# Misc
-*.keystore
->>>>>>> 4f9d8ff (Initial NutriCan MVP with Compose UI and ViewModel)

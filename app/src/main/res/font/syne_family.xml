@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Download Syne and DM Mono from fonts.google.com and place .ttf files here:
+     syne.ttf, syne_bold.ttf, dm_mono.ttf -->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font android:fontStyle="normal" android:fontWeight="400" android:font="@font/syne"/>
+    <font android:fontStyle="normal" android:fontWeight="700" android:font="@font/syne_bold"/>
+</font-family>

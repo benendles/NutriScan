@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NutriScan" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/olive</item>
+        <item name="colorPrimaryVariant">@color/olive_light</item>
+        <item name="colorOnPrimary">@color/white_soft</item>
+        <item name="colorSecondary">@color/rust</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">@color/cream</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorBackground">@color/cream</item>
+        <item name="android:statusBarColor">@color/charcoal</item>
+        <item name="android:navigationBarColor">@color/charcoal</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:fontFamily">@font/syne</item>
+    </style>
+
+    <style name="Theme.NutriScan.Dark" parent="Theme.NutriScan">
+        <item name="android:statusBarColor">@color/charcoal</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

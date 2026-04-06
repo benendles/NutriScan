@@ -1,4 +1,4 @@
-package com.example.nutriscan
+package com.nutriscan.app
 
 data class FoodEntry(
     val name: String,
